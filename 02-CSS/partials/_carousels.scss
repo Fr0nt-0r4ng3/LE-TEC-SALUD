@@ -1,0 +1,255 @@
+//Carousel
+
+.cb-carousel {
+  position: relative;
+
+  .item{
+    img{
+        margin: 0 auto !important;
+      }
+  }
+
+  #carousel-001 {
+    .item {
+      .b-radius {
+        border-radius: 1.6rem;
+      }
+
+      .img {
+        background-color: $tec-blueLight;
+
+        @include movil0 {
+          width: 100%;
+          border-radius: 1.6rem 1.6rem 0 0;
+        }
+
+        @include movil991 {
+          width: 35%;
+          border-radius: 1.6rem 0 0 1.6rem;
+        }
+
+        .icono {
+          max-width: 100px;
+          width: 100%;
+        }
+      }
+
+      
+
+      .content {
+        background-color: $primary-white;
+
+        @include movil0 {
+          width: 100%;
+          border-radius: 0 0 1.6rem 1.6rem;
+        }
+
+        @include movil991 {
+          border-radius: 0 1.6rem 1.6rem 0;
+          width: 65%;
+        }
+      }
+    }
+  }
+
+  #carousel-002,
+  #carousel-003 {
+    .item {
+      .img {
+        img {
+          border-radius: 1.6rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      display: flex;
+      justify-content: space-between;
+
+      @include movil0 {
+        top: 30%;
+        width: 100%;
+      }
+      @include movil1200 {
+        width: 110%;
+        top: 35%;
+      }
+
+      .owl-prev,
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        background-color: $tec-blueLight;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          background-color: $tec-blue;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  #carousel-004,
+  #carousel-005 {
+    .img {
+      img {
+        border-radius: 1.6rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #carousel-005 {
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 48%;
+      display: flex;
+      justify-content: space-between;
+
+      .owl-prev,
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        background-color: $tec-blueLight;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          background-color: $tec-blue;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  #carousel-006 {
+    .owl-item .item {
+      transform: translate3d(
+        0,
+        0,
+        0
+      ); /* DO NOT REMEMBER WHERE TU PUT THIS, SEARCH FOR 3D ACCELERATION */
+      // transform: scale(0.9);
+
+      // transition: all .25s ease-in-out;
+      margin: 1.5rem 0; /* OVERWRITE PLUGIN MARGIN */
+    }
+
+    .owl-item .item {
+      -webkit-transition: 0.3s;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 0.5;
+      cursor: pointer;
+      border-radius: 1.6rem;
+    }
+
+    .owl-item.center .item {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .card-item {
+      img {
+        border-radius: 1.6rem 1.6rem 0 0;
+      }
+
+      .border {
+        background-color: $primary-white;
+        border-radius: 0 0 1.6rem 1.6rem;
+      }
+    }
+  }
+
+  #carousel-007,
+  #carousel-008,
+  #carousel-009 {
+    .item {
+      img {
+        border-radius: 1.6rem;
+        cursor: pointer;
+      }
+    }
+
+    .owl-nav {
+      position: absolute;
+      max-width: 110px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include movil0 {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        align-items: end;
+      }
+
+      @include movil768 {
+        top: -4rem;
+        right: 0;
+        align-items: start;
+      }
+
+      .owl-prev,
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        background-color: $tec-blueLight;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          background-color: $tec-blue;
+          transition: 0.3s ease;
+        }
+      }
+    }
+  }
+
+  //dots
+
+  .owl-dots {
+    .owl-dot {
+      span {
+        width: 40px;
+        height: 5px;
+        background-color: $tec-blueLight;
+      }
+
+      &.active {
+        span {
+          background-color: $tec-blue;
+        }
+      }
+    }
+  }
+}

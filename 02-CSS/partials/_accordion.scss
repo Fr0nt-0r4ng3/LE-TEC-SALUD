@@ -1,0 +1,32 @@
+//Accordion
+
+.cb-accordion{
+    .accordion{
+        --bs-accordion-bg: transparent;
+        --bs-accordion-border-width: 0;
+    }
+
+    .accordion-button{
+        border-bottom: 1px solid;   
+    }
+
+    .accordion-button:not(.collapsed){
+        color: $primary-blue;
+        background-color: $tec-blueMedium;
+    }
+
+    &.c-002{
+        .img{
+            background-size: cover;
+            background-position: center;
+            
+            @include movil0{
+                min-height: 40dvh;
+            }
+
+            @include movil991{
+                min-height: 100%;
+            }
+        }
+    }
+}

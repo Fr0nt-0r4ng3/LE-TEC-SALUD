@@ -1,0 +1,80 @@
+//Appoiment
+
+.cb-appoiment {
+
+  .content {
+    background-color: $primary-white;
+    border-radius: 1.5rem;
+
+    .title {
+      background-color: $tec-blueLight;
+      border-radius: 1.5rem;
+
+      h3{
+        margin-bottom: 0;
+      }
+    }
+
+    .form-control {
+      border-radius: 1rem;
+
+      &.input-time {
+        @include movil0 {
+          width: 90%;
+        }
+
+        @include movil575 {
+          width: 22%;
+        }
+      }
+
+      &.input-text {
+        @include movil0 {
+          width: 98%;
+        }
+
+        @include movil575 {
+          width: 76%;
+        }
+      }
+    }
+  }
+
+  &.c-003{
+    .conference{
+        background-color: $primary-blue;
+        @include movil0 {
+          width: 100%;
+        }
+
+        @include movil991{
+            width: 28%;
+        }
+
+    }
+
+    .detail-conference{
+        @include movil0 {
+          width: 100%;
+        }
+
+        @include movil768{
+            width: 48%;
+        }
+
+        @include movil991{
+            width: 33%;
+        }
+
+        ul{
+            li{
+                font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+            }
+        }
+
+        p,h3,ul{
+            margin-bottom: 0;
+        }
+    }
+  }
+}

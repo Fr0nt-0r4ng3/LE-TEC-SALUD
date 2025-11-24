@@ -1,0 +1,43 @@
+//Footer
+
+footer{
+    background-color: $tec-dark;
+    
+
+    .logo-footer{
+        max-width: 150px;
+        width: 100%;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+
+        li{
+            a{
+                font-size: 1.3rem !important;
+                color: $primary-white;
+
+                &:hover{
+                    color: $tec-fire;
+                }
+            }
+        }
+    }
+
+    hr{
+        background-color: $primary-white;
+        border: .5px solid $primary-white;
+    }
+
+    p{
+        margin-bottom: 0;
+        color: $primary-white;
+    }
+
+    a{
+        color: $primary-white !important;
+    }
+
+}

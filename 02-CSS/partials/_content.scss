@@ -1,0 +1,39 @@
+//content
+
+.cb-content {
+
+    .video-btn{
+        cursor: pointer;
+    }
+
+    img {
+      border-radius: 1.6rem;
+      width: 100%;
+
+      &.img-large {
+        max-width: 700px;
+      }
+
+      &.img-medium{
+        max-width: 500px;
+      }
+
+      &.img-small {
+        max-width: 270px;
+      }
+    }
+
+    .content-img{
+
+        img{
+            @include movil0{
+                width: 100%;
+            }
+
+            @include movil768{
+                width: 48%;
+            }
+        }
+    }
+
+}

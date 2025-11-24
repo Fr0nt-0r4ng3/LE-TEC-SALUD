@@ -1,0 +1,18 @@
+.titleSnipet {
+  display: none;
+}
+
+.cs-hero {
+  background-attachment: fixed;
+}
+
+.cb-video {
+  &.gradient {
+    background: #c4d0fe;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 208, 254, 0) 47%,
+      rgba(196, 208, 254, 1) 100%
+    );
+  }
+}

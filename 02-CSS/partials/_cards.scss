@@ -1,0 +1,306 @@
+//Cards
+
+.cb-cards {
+  .card-tec {
+    img {
+      border-radius: 1.6rem;
+    }
+
+    &.shadow {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 1.6rem;
+
+      img {
+        border-radius: 1.6rem 1.6rem 0 0;
+      }
+    }
+
+    @include movil0 {
+      width: 98%;
+    }
+
+    @include movil768 {
+      width: 48%;
+    }
+
+    @include movil991 {
+      width: 24%;
+    }
+
+    .content {
+      background-color: $primary-white;
+
+      &.b-radius {
+        border-radius: 0 0 1.6rem 1.6rem;
+      }
+
+      &.b-radius-full {
+        border-radius: 1.6rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      .icono {
+        border-radius: 0;
+        max-width: 90px;
+        width: 100%;
+      }
+    }
+  }
+
+  &.c-004 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      @include movil991 {
+        width: 32%;
+      }
+      img {
+        border-radius: 1.6rem 1.6rem 0 0;
+      }
+    }
+  }
+
+  &.c-005 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      @include movil1200 {
+        width: 48%;
+      }
+
+      @include movil1400 {
+        width: 32%;
+      }
+
+      .img {
+        img {
+          max-width: 180px;
+          width: 100%;
+          border-radius: 1rem;
+        }
+      }
+
+      .content {
+        border-radius: 0 1.6rem 1.6rem;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.c-006 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      @include movil991 {
+        width: 32%;
+      }
+    }
+  }
+
+  &.c-007 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      @include movil991 {
+        width: 32%;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.c-008 {
+    .card-tec {
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil575 {
+        width: 48%;
+      }
+
+      @include movil991 {
+        width: 24%;
+      }
+    }
+  }
+
+  &.c-009 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem;
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      @include movil991 {
+        width: 32%;
+      }
+    }
+  }
+
+  &.c-011 {
+    .card-tec {
+      background-color: $primary-white;
+      border-radius: 1.6rem !important;
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil768 {
+        width: 48%;
+      }
+
+      .img {
+        img {
+          max-width: 100px;
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.c-012 {
+    .card-tec {
+      border-radius: 1.6rem !important;
+      border: 1px solid $tec-gray;
+      position: relative;
+      bottom: 0;
+      transition: 0.3s ease;
+
+      @include movil0 {
+        width: 98%;
+      }
+
+      @include movil575 {
+        width: 48%;
+      }
+
+      @include movil1200 {
+        width: 32%;
+      }
+
+      .img {
+        img {
+          max-width: 90px;
+          width: 100%;
+          border-radius: 0;
+        }
+      }
+
+      .icon {
+        a {
+          max-width: 80px;
+          width: 100%;
+          display: inline-block;
+          i {
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        bottom: 5px;
+        transition: 0.3s ease;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.c-013 {
+    .card-tec {
+      transition: 0.3s ease;
+      width: 100%;
+
+      .bg-card {
+          background-size: cover;
+          background-position: center center;
+
+          @include movil0 {
+            width: 100%;
+            min-height: 25dvh;
+            border-radius: 1.6rem 1.6rem  0 0;
+          }
+
+          @include movil768 {
+            width: 40%;
+            border-radius: 1.6rem 0  0 1.6rem;
+          }
+        }
+
+      .content {
+        @include movil0 {
+          width: 100%;
+          border-radius: 0 0 1.6rem 1.6rem;
+        }
+
+        @include movil768 {
+          width: 60%;
+          border-radius: 0  1.6rem 1.6rem 0;
+        }
+      }
+    }
+  }
+}

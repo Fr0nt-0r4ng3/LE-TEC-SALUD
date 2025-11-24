@@ -1,0 +1,400 @@
+/* Resets */
+
+/*scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: $tec-blueLight;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $tec-dark;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+::selection {
+  background-color: $tec-blueMedium;
+  color: $tec-dark;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+section.noPadding {
+  padding: 0em 0;
+}
+
+/* Fonts */
+/* Fonts */
+body,
+input,
+textarea,
+select {
+  background-color: $tec-warm;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-display: swap;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 2.2813rem + 1.5vw, 3.125rem);
+  font-weight: 500;
+
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.5938rem + 0.5vw, 1.875rem);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
+  font-weight: 500;
+}
+
+p,
+li,
+label {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+}
+
+.smallTxt {
+  font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem) !important;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+/* links */
+a {
+  color: $tec-fire;
+  text-decoration: underline;
+  transition: color 0.3s;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem) !important;
+}
+
+
+a:hover,
+a:active,
+a:focus {
+  color: $tec-blue !important;
+}
+
+//Images
+img {
+      
+      width: 100%;
+
+      &.img-large {
+        max-width: 700px;
+      }
+
+      &.img-medium{
+        max-width: 500px;
+      }
+
+      &.img-small {
+        max-width: 270px;
+      }
+    }
+
+//Label
+.titleSnipet {
+  background-color: $tec-gray;
+  font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+  font-weight: 600;
+}
+
+// Style footer
+footer {
+  p,
+  a {
+    font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem) !important;
+  }
+}
+
+//Aspect ratio images
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9 !important;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.aspect-ratio-2-3 {
+  aspect-ratio: 2 / 3 !important;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3 !important;
+}
+
+.aspect-ratio-2-1 {
+  aspect-ratio: 2 / 1 !important;
+}
+
+
+
+//Border radius
+
+.b-radius {
+  border-radius: 1.6rem !important;
+}
+
+.b-radius-bottom{
+  border-radius: 0 0 1.6rem 1.6rem !important;
+}
+
+.b-radius-top{
+  border-radius: 1.6rem 1.6rem 0 0 !important;
+}
+
+.b-radius-right{
+  border-radius: 0 1.6rem 1.6rem 0 !important;
+}
+
+.b-radius-left{
+
+  border-radius: 1.6rem 0 0 1.6rem;
+
+}
+
+/* Buttons */
+
+button.btn {
+  font-weight: 500;
+  border-radius: 6rem;
+  width: 100%;
+  padding: .8rem 1rem;
+  transition: 0.3s ease;
+  border: 0;
+
+  &.small {
+    max-width: 200px;
+  }
+
+  &.medium {
+    max-width: 300px;
+  }
+
+  &.full {
+    max-width: 100% !important;
+  }
+
+  &.fire {
+    background-color: $tec-fire;
+    color: $primary-white;
+  }
+
+  &.warm {
+    background-color: $tec-warm;
+    border: 1px solid $primary-blue;
+    color: $primary-blue;
+  }
+
+  &.dark {
+    background-color: $tec-dark;
+    border-radius: 1px solid $tec-warm;
+    color: $tec-warm;
+  }
+
+  &:hover {
+    background-color: #000;
+    color: $tec-warm;
+    transition: 0.3s ease;
+  }
+}
+
+a.link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6rem;
+  width: 100%;
+  padding: .8rem 1rem;
+  transition: 0.3s ease;
+  text-align: center;
+
+  &.small {
+    max-width: 200px;
+  }
+
+  &.medium {
+    max-width: 250px;
+  }
+
+  &.full {
+    max-width: 100% !important;
+  }
+
+  &.white {
+    background-color: transparent  !important;
+    border: 1px solid $tec-warm;
+    color: $primary-white;
+  }
+  
+  &.fire {
+    background-color: $tec-fire;
+    color: $primary-white;
+  }
+
+  &.warm {
+    background-color: $tec-warm;
+    border: 1px solid $primary-blue;
+    color: $primary-blue;
+  }
+
+  &.dark {
+    background-color: $tec-dark;
+    border: 1px solid $tec-warm;
+    color: $tec-warm;
+  }
+
+  &.blue {
+    background-color: $tec-blue;
+    border-radius: 1px solid $tec-warm;
+    color: $tec-warm;
+  }
+
+  &:hover {
+    background-color: #000;
+    color: $primary-white !important;
+    transition: 0.3s ease;
+  }
+
+  &:active{
+    color: $primary-white !important;
+  }
+}
+
+//Background
+
+.bg-blue-light {
+  background-color: $tec-blueLight !important;
+}
+
+.bg-blue-medium {
+  background-color: $tec-blueMedium !important;
+}
+
+.bg-heart {
+  background-color: $tec-heart !important;
+}
+
+.bg-white {
+  background-color: $primary-white !important;
+}
+
+.bg-blue-primary {
+  background-color: $primary-blue !important;
+}
+
+.bg-warm {
+  background-color: $tec-warm !important;
+}
+
+.bg-blue {
+  background-color: $tec-blue !important;
+}
+
+.bg-blue-dark {
+  background-color: $tec-dark !important;
+}
+
+//bg-gradient
+.top-gradient {
+  background: #c4d0fe;
+  background: linear-gradient(
+    360deg,
+    rgba(196, 208, 254, 0) 47%,
+    rgba(196, 208, 254, 1) 100%
+  );
+}
+
+.bottom-gradient {
+  background: #c4d0fe;
+  background: linear-gradient(
+    180deg,
+    rgba(196, 208, 254, 0) 47%,
+    rgba(196, 208, 254, 1) 100%
+  );
+}
+
+
+//Text-color
+
+.txt-blue-light {
+  color: $tec-blueLight !important;
+}
+
+.txt-blue-medium {
+  color: $tec-blueMedium !important;
+}
+
+.txt-heart {
+  color: $tec-heart !important;
+}
+
+.txt-white {
+  color: $primary-white !important;
+}
+
+.txt-blue-primary {
+  color: $primary-blue !important;
+}
+
+.txt-warm {
+  color: $tec-warm !important;
+}
+
+.txt-blue {
+  color: $tec-blue !important;
+}
+
+.txt-blue-dark {
+  color: $tec-dark !important;
+}
+

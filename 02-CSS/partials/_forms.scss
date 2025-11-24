@@ -1,0 +1,41 @@
+//Forms
+
+.cb-form {
+  .form-control,
+  select {
+    border-radius: 1rem;
+  }
+
+  .contact {
+    a {
+      display: inline-block;
+      border: 1px solid;
+      text-decoration: none;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: $tec-dark;
+        color: $primary-white !important;
+        transition: 0.3s ease;
+      }
+
+      i{
+        font-size: 1.6rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .img {
+    background-size: cover;
+    background-position: center;
+
+    @include movil0 {
+      min-height: 40dvh;
+    }
+
+    @include movil991 {
+      min-height: 100%;
+    }
+  }
+}

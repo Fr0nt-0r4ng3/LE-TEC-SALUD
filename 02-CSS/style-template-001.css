@@ -1,0 +1,14 @@
+.titleSnipet {
+  display: none;
+}
+
+.c-008 {
+  &.gradient {
+    background: #c4d0fe;
+    background: linear-gradient(
+      360deg,
+      rgba(196, 208, 254, 0) 47%,
+      rgba(196, 208, 254, 1) 100%
+    );
+  }
+}

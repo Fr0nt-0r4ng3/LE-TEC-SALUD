@@ -1,0 +1,11 @@
+//cta
+.cb-cta{
+    img{
+        border-radius: 1.5rem;
+    }
+
+    &.bg{
+        background-size: cover;
+        background-position: center center;
+    }
+}

@@ -1,0 +1,60 @@
+//header
+
+header {
+  background-color: $primary-white;
+
+  .nav-item {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -0%);
+      width: 0%;
+      height: 2px;
+      background-color: $primary-blue;
+      opacity: 0;
+      transition: 0.3s ease;
+    }
+
+    .nav-link {
+      color: $primary-blue;
+      font-weight: 500;
+    }
+
+    &:hover {
+      &::after {
+        width: 90%;
+        opacity: 1;
+        transition: 0.3s ease;
+      }
+    }
+
+    &.button {
+      background-color: $tec-fire;
+      color: $primary-white;
+      max-width: 200px;
+      width: 100%;
+      border-radius: 1.5rem;
+
+      &::after{
+        display: none;
+      }
+
+      &:hover{
+        background-color: $tec-dark;
+        transition: .3s ease;
+        .nav-link{
+            color: $primary-white !important;
+        }
+      }
+    }
+  }
+
+  .logo {
+    max-width: 150px;
+    width: 100%;
+  }
+}
