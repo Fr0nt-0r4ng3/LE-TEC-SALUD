@@ -116,12 +116,17 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            900: {
+            
+            600: {
+                items: 2
+            },
+
+            800: {
                 items: 2
             },
 
             1200: {
-                items: 3
+                items: 5
             },
 
             1500: {
@@ -134,8 +139,7 @@ $(document).ready(function () {
         loop: false,
         autoplay: true,
         autoplayHoverPause:true,
-        margin: 30,
-        stagePadding: 25,
+        margin: 20,
         nav: true,
         responsive: {
             0: {

@@ -73,12 +73,12 @@ h6 {
   font-display: swap;
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
+  margin-bottom: 0;
 }
 
 h1 {
   font-size: clamp(2.75rem, 2.2813rem + 1.5vw, 3.125rem);
   font-weight: 500;
-
 }
 
 h2 {
@@ -103,7 +103,7 @@ label {
   font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem) !important;
 }
 
-p{
+p {
   margin-bottom: 0;
 }
 
@@ -115,30 +115,31 @@ a {
   font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem) !important;
 }
 
-
 a:hover,
-a:active,
-a:focus {
+a:active{
   color: $tec-blue !important;
+}
+
+a:focus{
+  color: $primary-white !important;
 }
 
 //Images
 img {
-      
-      width: 100%;
+  width: 100%;
 
-      &.img-large {
-        max-width: 700px;
-      }
+  &.img-large {
+    max-width: 700px;
+  }
 
-      &.img-medium{
-        max-width: 500px;
-      }
+  &.img-medium {
+    max-width: 500px;
+  }
 
-      &.img-small {
-        max-width: 270px;
-      }
-    }
+  &.img-small {
+    max-width: 270px;
+  }
+}
 
 //Label
 .titleSnipet {
@@ -176,30 +177,26 @@ footer {
   aspect-ratio: 2 / 1 !important;
 }
 
-
-
 //Border radius
 
 .b-radius {
   border-radius: 1.6rem !important;
 }
 
-.b-radius-bottom{
+.b-radius-bottom {
   border-radius: 0 0 1.6rem 1.6rem !important;
 }
 
-.b-radius-top{
+.b-radius-top {
   border-radius: 1.6rem 1.6rem 0 0 !important;
 }
 
-.b-radius-right{
+.b-radius-right {
   border-radius: 0 1.6rem 1.6rem 0 !important;
 }
 
-.b-radius-left{
-
-  border-radius: 1.6rem 0 0 1.6rem;
-
+.b-radius-left {
+  border-radius: 1.6rem 0 0 1.6rem !important;
 }
 
 /* Buttons */
@@ -207,8 +204,8 @@ footer {
 button.btn {
   font-weight: 500;
   border-radius: 6rem;
-  width: 100%;
-  padding: .8rem 1rem;
+  width: 100% !important;
+  padding: 0.8rem 1rem;
   transition: 0.3s ease;
   border: 0;
 
@@ -254,7 +251,7 @@ a.link {
   font-weight: 500;
   border-radius: 6rem;
   width: 100%;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   transition: 0.3s ease;
   text-align: center;
 
@@ -271,11 +268,11 @@ a.link {
   }
 
   &.white {
-    background-color: transparent  !important;
+    background-color: transparent !important;
     border: 1px solid $tec-warm;
     color: $primary-white;
   }
-  
+
   &.fire {
     background-color: $tec-fire;
     color: $primary-white;
@@ -305,7 +302,7 @@ a.link {
     transition: 0.3s ease;
   }
 
-  &:active{
+  &:active {
     color: $primary-white !important;
   }
 }
@@ -363,7 +360,6 @@ a.link {
   );
 }
 
-
 //Text-color
 
 .txt-blue-light {
@@ -398,3 +394,36 @@ a.link {
   color: $tec-dark !important;
 }
 
+// Border color
+
+.border {
+  border: 1px solid !important;
+
+  &.blue-medium {
+    border-color: $tec-blueMedium !important;
+  }
+
+  &.heart {
+    border-color: $tec-heart !important;
+  }
+
+  &.white {
+    border-color: $primary-white !important;
+  }
+
+  &.blue-primary {
+    border-color: $primary-blue !important;
+  }
+
+  &.warm {
+    border-color: $tec-warm !important;
+  }
+
+  &.blue {
+    border-color: $tec-blue !important;
+  }
+
+  &.blue-dark {
+    border-color: $tec-dark !important;
+  }
+}

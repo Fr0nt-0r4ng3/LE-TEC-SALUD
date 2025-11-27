@@ -79,6 +79,7 @@ h6 {
   font-display: swap;
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -121,9 +122,12 @@ a {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   color: #4168FB !important;
+}
+
+a:focus {
+  color: #fff !important;
 }
 
 img {
@@ -187,14 +191,14 @@ footer a {
 }
 
 .b-radius-left {
-  border-radius: 1.6rem 0 0 1.6rem;
+  border-radius: 1.6rem 0 0 1.6rem !important;
 }
 
 /* Buttons */
 button.btn {
   font-weight: 500;
   border-radius: 6rem;
-  width: 100%;
+  width: 100% !important;
   padding: 0.8rem 1rem;
   transition: 0.3s ease;
   border: 0;
@@ -352,6 +356,31 @@ a.link:active {
 
 .txt-blue-dark {
   color: #252F56 !important;
+}
+
+.border {
+  border: 1px solid !important;
+}
+.border.blue-medium {
+  border-color: #b8c6fd !important;
+}
+.border.heart {
+  border-color: #F4D8E1 !important;
+}
+.border.white {
+  border-color: #fff !important;
+}
+.border.blue-primary {
+  border-color: #051443 !important;
+}
+.border.warm {
+  border-color: #F2EFEE !important;
+}
+.border.blue {
+  border-color: #4168FB !important;
+}
+.border.blue-dark {
+  border-color: #252F56 !important;
 }
 
 /*--------------RESPONSIVE----------*/
@@ -715,29 +744,32 @@ footer a {
 .cb-carousel #carousel-007 .owl-nav,
 .cb-carousel #carousel-008 .owl-nav,
 .cb-carousel #carousel-009 .owl-nav {
-  position: absolute;
-  max-width: 110px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  padding: 2rem 0;
 }
 @media only screen and (min-width: 0px) {
   .cb-carousel #carousel-007 .owl-nav,
   .cb-carousel #carousel-008 .owl-nav,
   .cb-carousel #carousel-009 .owl-nav {
+    max-width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
-    align-items: end;
+    position: relative;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 768px) {
   .cb-carousel #carousel-007 .owl-nav,
   .cb-carousel #carousel-008 .owl-nav,
   .cb-carousel #carousel-009 .owl-nav {
-    top: -4rem;
+    max-width: 110px;
+    top: -100px;
     right: 0;
     align-items: start;
+    position: absolute;
+    justify-content: space-between;
   }
 }
 .cb-carousel #carousel-007 .owl-nav .owl-prev,
@@ -746,8 +778,8 @@ footer a {
 .cb-carousel #carousel-008 .owl-nav .owl-next,
 .cb-carousel #carousel-009 .owl-nav .owl-prev,
 .cb-carousel #carousel-009 .owl-nav .owl-next {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: #DDE4FD;
   border-radius: 50%;
   display: flex;
@@ -1062,26 +1094,23 @@ footer a {
 .cb-appoiment .content .title h3 {
   margin-bottom: 0;
 }
-.cb-appoiment .content .form-control {
-  border-radius: 1rem;
-}
 @media only screen and (min-width: 0px) {
-  .cb-appoiment .content .form-control.input-time {
-    width: 90%;
-  }
-}
-@media only screen and (min-width: 575px) {
-  .cb-appoiment .content .form-control.input-time {
-    width: 22%;
-  }
-}
-@media only screen and (min-width: 0px) {
-  .cb-appoiment .content .form-control.input-text {
+  .cb-appoiment .content p.input-time {
     width: 98%;
   }
 }
 @media only screen and (min-width: 575px) {
-  .cb-appoiment .content .form-control.input-text {
+  .cb-appoiment .content p.input-time {
+    width: 22%;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .cb-appoiment .content p.input-text {
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .cb-appoiment .content p.input-text {
     width: 76%;
   }
 }
@@ -1116,7 +1145,9 @@ footer a {
 .cb-appoiment.c-003 .detail-conference ul li {
   font-size: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
 }
-.cb-appoiment.c-003 .detail-conference p, .cb-appoiment.c-003 .detail-conference h3, .cb-appoiment.c-003 .detail-conference ul {
+.cb-appoiment.c-003 .detail-conference p,
+.cb-appoiment.c-003 .detail-conference h3,
+.cb-appoiment.c-003 .detail-conference ul {
   margin-bottom: 0;
 }
 
@@ -1175,7 +1206,7 @@ footer a {
 }
 @media only screen and (min-width: 0px) {
   .cb-form .img {
-    min-height: 40dvh;
+    min-height: 50dvh;
   }
 }
 @media only screen and (min-width: 991px) {

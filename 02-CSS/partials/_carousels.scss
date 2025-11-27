@@ -196,29 +196,32 @@
     }
 
     .owl-nav {
-      position: absolute;
-      max-width: 110px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      padding: 2rem 0;
 
       @include movil0 {
+        max-width: 100%;
         top: 0;
         right: 0;
         bottom: 0;
-        align-items: end;
+        position: relative;
+        justify-content: center;
       }
 
       @include movil768 {
-        top: -4rem;
+        max-width: 110px;
+        top: -100px;
         right: 0;
         align-items: start;
+        position: absolute;
+        justify-content: space-between;
       }
 
       .owl-prev,
       .owl-next {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         background-color: $tec-blueLight;
         border-radius: 50%;
         display: flex;
