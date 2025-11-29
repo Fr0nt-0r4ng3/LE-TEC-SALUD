@@ -223,6 +223,11 @@ button.btn.warm {
 }
 button.btn.dark {
   background-color: #252F56;
+  border: 1px solid #F2EFEE;
+  color: #F2EFEE;
+}
+button.btn.blue {
+  background-color: #4168FB;
   border-radius: 1px solid #F2EFEE;
   color: #F2EFEE;
 }
@@ -558,7 +563,6 @@ footer a {
   cursor: pointer;
 }
 .cb-content img {
-  border-radius: 1.6rem;
   width: 100%;
 }
 .cb-content img.img-large {
@@ -1066,7 +1070,8 @@ footer a {
 }
 @media only screen and (min-width: 768px) {
   .cb-cards.c-013 .card-tec .bg-card {
-    width: 40%;
+    min-height: 15dvh;
+    width: 35%;
     border-radius: 1.6rem 0 0 1.6rem;
   }
 }
@@ -1078,7 +1083,7 @@ footer a {
 }
 @media only screen and (min-width: 768px) {
   .cb-cards.c-013 .card-tec .content {
-    width: 60%;
+    width: 65%;
     border-radius: 0 1.6rem 1.6rem 0;
   }
 }

@@ -285,7 +285,8 @@
           }
 
           @include movil768 {
-            width: 40%;
+            min-height: 15dvh;
+            width: 35%;
             border-radius: 1.6rem 0  0 1.6rem;
           }
         }
@@ -297,7 +298,7 @@
         }
 
         @include movil768 {
-          width: 60%;
+          width: 65%;
           border-radius: 0  1.6rem 1.6rem 0;
         }
       }

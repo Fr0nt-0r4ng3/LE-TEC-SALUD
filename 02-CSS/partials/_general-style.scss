@@ -234,9 +234,17 @@ button.btn {
 
   &.dark {
     background-color: $tec-dark;
+    border: 1px solid $tec-warm;
+    color: $tec-warm;
+  }
+
+  &.blue {
+    background-color: $tec-blue;
     border-radius: 1px solid $tec-warm;
     color: $tec-warm;
   }
+
+ 
 
   &:hover {
     background-color: #000;

@@ -592,6 +592,17 @@
     <!-- <script src="https://mcv8rkn48lx2xhltpg1912kd8tg4.pub.sfmc-content.com/eltrwafdpgc"></script> -->
     <script src="../03-JS/carousel.js"></script>
 
+    <script>
+        jQuery(function ($) {
+            const $tabs = $('#pills-tab button');
+
+            $tabs.on('click', function () {
+                $tabs.removeClass('fire').addClass('warm');   // todos a warm
+                $(this).removeClass('warm').addClass('fire'); // el activo a fire
+            });
+        });
+    </script>
+
 
 
 
